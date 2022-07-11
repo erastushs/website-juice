@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  transition: all 0.3s;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+  background-color: #fce5bc;
+}
+
+section {
+  min-height: 100vh;
+  padding: 1.8rem 18%;
+}
+
+/*? Navbar start  */
+nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 10%;
+  /* background-color: aqua; */
+  z-index: 10;
+  position: fixed;
+}
+nav.active {
+  background-color: white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+nav .logo {
+  display: flex;
+  margin-top: 5px;
+}
+nav a.logo img {
+  border-radius: 50%;
+}
+nav a.logo h4 {
+  font-family: "Edu SA Beginner", cursive;
+  font-size: 1.5rem;
+  line-height: 40px;
+  padding: 0 1rem;
+  color: #008036;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 40px;
+  font-size: 1.2rem;
+  width: 50%;
+  /* background-color: rebeccapurple; */
+}
+nav ul li a {
+  color: #008036;
+  transition: 0.2s;
+}
+
+.menu-toggle {
+  margin-top: 10px;
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+.menu-toggle input {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 4px;
+  background-color: #008036;
+  border-radius: 1px;
+  transition: 0.5s;
+}
+
+/*? hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+@media screen and (max-width: 968px) {
+  nav {
+    bottom: 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    position: fixed;
+  }
+  ul li {
+    width: 50%;
+    text-align: center;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 30vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    /* background-color: rgba(70, 70, 70, 0.6); */
+
+    transform: translateY(30%);
+    opacity: 0;
+    transition: transform 0.2s linear, opacity 0.3s linear;
+    border-radius: 20px;
+    /* box-shadow: 0 0 5px#202020; */
+  }
+
+  .menu-toggle {
+    display: flex;
+    margin-top: 15px;
+  }
+  nav ul.slide {
+    transform: translateY(-95%);
+    opacity: 1;
+  }
+}
+
+/*? navbar end  */

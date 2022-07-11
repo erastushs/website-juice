@@ -3,24 +3,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--? font -->
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!--? Favicon  -->
+    <link id="favicon" rel="shortcut icon" href="img/logo.png" type="image/x-png" />
+
+    <!--? Main CSS  -->
     <link rel="stylesheet" href="assets/style.css" />
+
     <title>Juice You</title>
   </head>
   <body>
+    <!--? Navbar  -->
     <header>
-      <nav>
-        <a href="/">
-          <img src="img/logo.jpg" alt="" />
+      <nav class="">
+        <a href="" class="logo">
+          <img src="img/logo.png" alt="logo" style="width: 40px; height: 40px" />
           <h4>Juice You</h4>
         </a>
 
         <ul>
-          <li><a href="/#home">Home</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#skills">Skills</a></li>
-          <li><a class="active" href="#project">Project</a></li>
+          <li><a class="active" href="/#home">Home</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
 
+        <!--? Menu toggle untuk mobile  -->
         <div class="menu-toggle">
           <input type="checkbox" />
           <span></span>
@@ -29,15 +40,19 @@
         </div>
       </nav>
     </header>
+
+    <!--? main -->
     <main>
-      <div class="home"></div>
-      <div class="tentang">
+      <section id="home" class="home"></section>
+      <section id="tentang" class="tentang">
         <article></article>
         <aside></aside>
-      </div>
-      <div class="produk"></div>
-      <div class="kontak"></div>
+      </section>
+      <section id="produk" class="produk"></section>
+      <section id="kontak" class="kontak"></section>
     </main>
+
+    <!--? footer -->
     <footer></footer>
     <script src="/assets/script.js"></script>
   </body>
