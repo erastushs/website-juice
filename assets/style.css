@@ -16,7 +16,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 1.8rem 18%;
+  padding: 1.8rem 10%;
 }
 
 /*? Navbar start  */
@@ -56,13 +56,15 @@ nav ul {
   line-height: 40px;
   font-size: 1.2rem;
   width: 50%;
-  /* background-color: rebeccapurple; */
 }
 nav ul li a {
   color: #008036;
   transition: 0.2s;
 }
-
+nav ul li a:hover {
+  border-bottom: 0.2rem solid #008036;
+  padding: 0.5rem 0;
+}
 .menu-toggle {
   margin-top: 10px;
   display: none;
@@ -148,3 +150,148 @@ nav ul li a {
 }
 
 /*? navbar end  */
+
+/*? home start  */
+.home {
+  background-image: url(/img/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home .content {
+  margin: 35vh 0;
+  /* background-color: rebeccapurple; */
+}
+
+.home .content h2 {
+  color: #008036;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 4px 3px 0 #fdf5e8, 2px 2px 2px rgba(0, 128, 54, 0);
+}
+
+.home .content a {
+  background-color: #008036;
+  color: white;
+  padding: 0.7rem;
+  border-radius: 4rem;
+  box-shadow: 0px 10px 13px -7px #fdf5e8, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+.home .content a:hover {
+  margin-left: 10px;
+  filter: brightness(90%);
+}
+
+@media screen and (max-width: 968px) {
+  .home {
+    background-position: calc(100% + 700px);
+  }
+}
+
+/*? home end  */
+
+/*? Tentang start */
+.tentang h1 {
+  color: #008036;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  text-shadow: 4px 3px 0 #fdf5e8, 2px 2px 2px rgba(0, 128, 54, 0);
+}
+.tentang .content-about {
+  display: flex;
+}
+.tentang .content-about .content {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.tentang .content .smoothie {
+  display: flex;
+  margin-bottom: 40px;
+}
+.tentang .smoothie img {
+  width: 40%;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.tentang .smoothie article {
+  width: 60%;
+  color: #008036;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.tentang .content .juice {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.tentang .juice img {
+  width: 40%;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.tentang .juice article {
+  text-align: justify;
+  width: 60%;
+  color: #008036;
+  font-size: 1.5rem;
+}
+
+.tentang .content-about .profile {
+  width: 30%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.tentang .profile img {
+  width: 100%;
+  border-radius: 5px;
+}
+.tentang .profile h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #008036;
+  text-shadow: 4px 3px 0 #fdf5e8, 2px 2px 2px rgba(0, 128, 54, 0);
+  margin: 10px 0 20px 0;
+}
+.tentang .profile article {
+  color: #008036;
+  text-align: justify;
+}
+@media screen and (max-width: 968px) {
+  .tentang .content-about {
+    flex-direction: column;
+  }
+  .tentang .content-about .content {
+    width: 100%;
+  }
+  .tentang .content-about .profile {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 668px) {
+  .tentang .content .smoothie {
+    flex-direction: column;
+  }
+  .tentang .smoothie img {
+    width: 100%;
+  }
+  .tentang .smoothie article {
+    width: 100%;
+  }
+
+  .tentang .content .juice {
+    flex-direction: column;
+  }
+  .tentang .juice img {
+    width: 100%;
+    margin: 0;
+  }
+  .tentang .juice article {
+    width: 100%;
+  }
+}
+/*? Tentang end */

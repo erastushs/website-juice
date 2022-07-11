@@ -10,5 +10,5 @@ const menuToggle = document.querySelector(".menu-toggle input");
 const ul = document.querySelector("nav ul");
 
 menuToggle.addEventListener("click", function () {
-  nav.classList.toggle("slide");
+  ul.classList.toggle("slide");
 });
