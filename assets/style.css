@@ -15,7 +15,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding: 1.8rem 10%;
 }
 
@@ -295,3 +295,113 @@ nav ul li a:hover {
   }
 }
 /*? Tentang end */
+
+/*? Produk start */
+.produk h1 {
+  color: #008036;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  text-shadow: 4px 3px 0 #fdf5e8, 2px 2px 2px rgba(0, 128, 54, 0);
+}
+.produk .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.produk .card {
+  width: 20%;
+  margin-bottom: 20px;
+}
+.produk .card img {
+  width: 100%;
+}
+.produk .card h4 {
+  text-align: center;
+  color: #008036;
+}
+@media screen and (max-width: 668px) {
+  .produk .card {
+    width: 40%;
+  }
+}
+/*? Produk end  */
+
+/*? Kontak start */
+.kontak h1 {
+  color: #008036;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+  text-shadow: 4px 3px 0 #fdf5e8, 2px 2px 2px rgba(0, 128, 54, 0);
+}
+.kontak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px 30px 20px;
+}
+.kontak form {
+  display: flex;
+  flex-direction: column;
+}
+.kontak input,
+.kontak textarea,
+.kontak button {
+  width: 500px;
+  margin-bottom: 5px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+}
+.kontak button {
+  background-color: #008036;
+  color: white;
+  cursor: pointer;
+}
+.kontak button:hover {
+  filter: brightness(90%);
+  transition: 0.5s;
+}
+@media screen and (max-width: 668px) {
+  .kontak input,
+  .kontak textarea,
+  .kontak button {
+    width: 100%;
+  }
+}
+/*? Kontak end */
+
+/*? Foooter Start */
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #008036;
+}
+
+footer h1 {
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 1rem;
+}
+
+footer h1 i {
+  color: #e90606;
+  margin: 0 0.3rem;
+  animation: pound 0.35s infinite alternate;
+}
+footer h1 a {
+  color: #ffcf3d;
+}
+
+@keyframes pound {
+  to {
+    transform: scale(1.1);
+  }
+}
+/*? Footer end */
