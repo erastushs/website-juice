@@ -166,7 +166,7 @@ nav ul li a:hover {
 
 /*? home start  */
 .home {
-  background-image: url(/img/main.jpg);
+  background-image: url(../img/main.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
